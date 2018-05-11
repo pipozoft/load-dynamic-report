@@ -1,0 +1,14 @@
+<div>
+    <!-- Display sample report data -->
+    <h1>{{report.title}}</h1>
+    <p>{{report.description}}</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Ship_diagram-numbers.svg/680px-Ship_diagram-numbers.svg.png" alt="">
+
+    <h3>Sample of how data can be manipulated inside this component</h3>
+    <form action="">
+        <fieldset> <label for="red">Red:</label> <input type="range" name="red" [(ngModel)]="colors.red" min="0" max="255"> {{colors.red}} </fieldset>
+        <fieldset> <label for="green">Green:</label> <input type="range" name="green" [(ngModel)]="colors.green" min="0" max="255"> {{colors.green}} </fieldset>
+        <fieldset> <label for="blue">Blue:</label> <input type="range" name="blue" [(ngModel)]="colors.blue" min="0" max="255"> {{colors.blue}} </fieldset>
+    </form>
+    <div class="box" [ngStyle]="setMyStyles(colors.red, colors.green, colors.blue)"></div>
+</div>

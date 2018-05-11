@@ -1,0 +1,23 @@
+img {
+    max-width: 300px;
+}
+
+form {
+    background: #f7f7f7;
+}
+
+fieldset {
+    border: 0;
+}
+
+label {
+    width: 50px;
+    display: inline-block;
+}
+
+.box {
+    margin: 25px;
+    width: 100px;
+    height: 100px;
+    border: 1px #000 dashed;
+}
